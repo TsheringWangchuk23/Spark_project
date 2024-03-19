@@ -1,0 +1,121 @@
+@layer reset {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: unset;
+    }
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+    img,
+    picture,
+    svg,
+    canvas {
+      /* display: block; */
+      max-inline-size: 100%;
+      block-size: auto;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+}
+
+body{
+    margin: 33px 192px 0px 192px;
+    font-family: inter,sans-serif;
+}
+
+
+/* Start of Navagation */
+nav{
+    display: flex;
+}
+
+
+/* providing spacing for the GCIT logo */
+.gcitlogo{
+    flex: 1.5;
+}
+
+/* Providing spacings for the link*/
+.nav_link_wrapper{
+    flex: 2;
+}
+
+/* Arranging links in a Horizontal manner */
+.nav_link_wrapper .link_list{
+    display: flex;
+    list-style: none;
+    margin-top: 0.8125rem;
+    gap: 2.75rem;
+}
+
+
+/* Styling the links within the list */
+.nav_link_wrapper .link_list .nav_link{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+.link_list .nav_link:hover,.link_list .nav_link:focus-visible,.link_list .nav_link:active{
+  color: #FF086B;
+}
+.nav_link_wrapper .link_list li .home_link{
+  color: #FF086B;
+}
+/* Navagation Ends here */
+
+
+/* Main content of the page starts */
+/* Styling the "SPARK "logo of the webpage */
+.spark_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.4094rem;
+    flex-direction: column;
+    gap: 1.472rem;
+    font-size: 2.5rem;
+}
+
+/* Styling the student image of the body */
+
+.std_image{
+  position: relative;
+  margin-top: 3.8125rem;
+}
+
+.std_image div img{
+  position: absolute;
+}
+
+.std_image .stdimg1 img{
+  left: 425px;
+}
+
+.std_image .stdimg2 img{
+  left: 270px;
+  top: 70px;
+}
+
+.std_image .stdimg3 img{
+  left: 150px;
+  top: 210px;
+}
