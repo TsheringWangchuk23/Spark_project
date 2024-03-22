@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="HomePageCSS.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spark HomePage</title>
   </head>
@@ -94,20 +100,65 @@
       <img src="Images/star.svg" alt="" aria-hidden="true" />
     </div>
     <section class="registration">
-        <h2>Register here</h2>
-        <form action="#" class="registration-form">
-            <div>
-                <input type="text" id="name" name="name" placeholder="Full name" required>
-                <input type="email" id="email" name="email" placeholder="Email address" required>
-                <input type="text" id="date-of-birth" name="date-of-birth" placeholder="Date of birth"  onfocus="(this.type='date')" onblur="(this.type='text')" required>
-            </div>
-            <hr>
-            <div>
-                <input type="text" id="gender" name="gender" placeholder="Gender" required>
-                <input type="text" id="country" name="country" placeholder="Country" required>
-                <input type="text" id="course" name="course" placeholder="Course path" required>
-            </div>
-        </form>
+      <h2>Register here</h2>
+      <form action="#" class="registration-form">
+        <div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full name"
+            class="input-field"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            class="input-field"
+            required
+          />
+          <input
+            type="text"
+            id="date-of-birth"
+            name="date-of-birth"
+            placeholder="Date of birth"
+            class="input-field"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            required
+          />
+        </div>
+        <div class="division-line"></div>
+        <img src="Images/star.svg" alt="" class="division-line-star" />
+        <div>
+          <input
+            type="text"
+            id="gender"
+            name="gender"
+            placeholder="Gender"
+            class="input-field"
+            required
+          />
+          <input
+            type="text"
+            id="country"
+            name="country"
+            placeholder="Country"
+            class="input-field"
+            required
+          />
+          <input
+            type="text"
+            id="course"
+            name="course"
+            placeholder="Course path"
+            class="input-field"
+            required
+          />
+        </div>
+      </form>
     </section>
   </body>
 </html>

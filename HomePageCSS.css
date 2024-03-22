@@ -37,21 +37,33 @@
 :root {
   --primary-dark: #ff086b;
   --primary-light: #ff571e;
-  --gradient: linear-gradient(to right, #ff571e, #ff086b);
+  --gradient-to-right: linear-gradient(to right, #ff571e, #ff086b);
+  --gradient-to-bottom: linear-gradient(to bottom, #ff571e, #ff086b);
+  --gradient-to-left: linear-gradient(to left, #ff571e, #ff086b);
   --text-dark: #161E31;
   --text-light: #A4A4A4;
   --white: #fff;
   --star-animation: sparkle 1.5s infinite;
-  --header-font-size: 48px;
-  --btn-text-small: 15px;
-  --btn-text-large: 24px;
-  --paragraph-text-large: 20px;
-  --paragraph-text-small: 15px;
-  --font-family: inter, sans-serif;
+  --header-font-size: 3rem;
+  --btn-text-small: 0.9375rem;
+  --btn-text-large: 1.5rem;
+  --paragraph-text-large: 1.25rem;
+  --paragraph-text-small: 0.9375rem;
+  --font-family: "Inter Tight", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 700;
 }
 
 body {
-  margin: 33px 192px 0px 192px;
+  font-family: var(--font-family);
+  /* margin: 33px 192px 0px 192px; */
+  padding: 2.0625rem 12rem 0 12rem;
   font-family: var(--font-family);
 }
 
@@ -83,7 +95,7 @@ nav {
 .nav_link_wrapper .link_list .nav_link {
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
   color: var(--text-dark);
 }
 
@@ -114,7 +126,7 @@ nav {
 .std_image {
   position: relative;
   margin-top: 3.8125rem;
-  min-height: 503px;
+  min-height: 31.4375rem;
 }
 
 .std_image div img {
@@ -122,30 +134,30 @@ nav {
 }
 
 .std_image .stdimg1 img {
-  left: 330px;
-  width: 452px;
-  height: 310px;
+  left: 20.625rem;
+  max-width: 28.25rem;
+  height: 19.375rem;
 }
 
 .std_image .stdimg2 img {
-  left: 160px;
-  top: 70px;
-  width: 162px;
-  height: 162px;
+  left: 10rem;
+  top: 4.375rem;
+  max-width: 10.125rem;
+  height: 10.125rem;
 }
 
 .std_image .stdimg3 img {
-  left: -15px;
-  top: 180px;
-  width: 215px;
-  height: 215px;
+  left: -0.9375rem;
+  top: 11.25rem;
+  max-width: 13.4375rem;
+  height: 13.4375rem;
 }
 
 .std_image .stdimg4 img {
-  left: 200px;
-  top: 255px;
-  width: 215px;
-  height: 215px;
+  left: 12.5rem;
+  top: 15.9375rem;
+  max-width: 13.4375rem;
+  height: 13.4375rem;
 }
 
 .std_image .stdimg5 img {
@@ -161,21 +173,21 @@ nav {
 .std_image .stdimg7 img {
   left: 705px;
   top: 255px;
-  width: 215px;
+  max-width: 215px;
   height: 215px;
 }
 
 .std_image .stdimg8 img {
   left: 920px;
   top: 180px;
-  width: 215px;
+  max-width: 215px;
   height: 215px;
 }
 
 .std_image .stdimg9 img {
   left: 790px;
   top: 70px;
-  width: 162px;
+  max-width: 162px;
   height: 162px;
 }
 
@@ -183,7 +195,7 @@ nav {
   top: 340px;
   left: 525px;
   height: 63px;
-  width: 63px;
+  max-width: 63px;
   animation: var(--star-animation);
 }
 
@@ -191,7 +203,7 @@ nav {
   top: 315px;
   left: 505px;
   height: 38px;
-  width: 38px;
+  max-width: 38px;
   animation: var(--star-animation);
 }
 
@@ -199,7 +211,7 @@ nav {
   top: 330px;
   left: 570px;
   height: 28px;
-  width: 28px;
+  max-width: 28px;
   animation: var(--star-animation);
 }
 @keyframes sparkle {
@@ -226,9 +238,9 @@ nav {
   color: var(--primary-light);
   background: var(--white);
   font-size: var(--header-font-size);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   margin: 20px;
-  background-image: var(--gradient);
+  background-image: var(--gradient-to-right);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -239,6 +251,7 @@ nav {
   font-size: var(--paragraph-text-large);
   margin: 30px;
   color: var(--text-dark);
+  font-weight: var(--font-weight-medium);
   opacity: 50%;
 }
 
@@ -276,11 +289,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 85px;
+  margin-top: 80px;
 }
 .lone-star img{
   width: 62px;
   height: 63px;
+  animation: var(--star-animation);
 }
 .registration{
   margin-top: 34px;
@@ -288,9 +302,37 @@ nav {
 .registration h2{
   text-align: center;
   margin-bottom: 34px;
+  font-weight:var(--font-weight-medium);
+  font-size: var(--header-font-size);
+  color: var(--primary-light);
+  background: var(--white);
+  background-image: var(--gradient-to-right);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .registration .registration-form{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.division-line{
+  background-image: var(--gradient-to-bottom);
+  width: 0.5px;
+  height: 150px;
+}
+img .division-line-star{
+  position: absolute;
+  width: 32px;
+  height: 33px;
+}
+.registration .registration-form div{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.registration .registration-form div .input-field{
+  max-width: 350px;
+  height: 65px;
 }
