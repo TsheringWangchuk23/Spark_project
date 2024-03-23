@@ -161,57 +161,57 @@ nav {
 }
 
 .std_image .stdimg5 img {
-  left: 420px;
-  top: 370px;
+  left: 26.25rem;
+  top: 23.125rem;
 }
 
 .std_image .stdimg6 img {
-  left: 580px;
-  top: 370px;
+  left: 36.25rem;
+  top: 23.125rem;
 }
 
 .std_image .stdimg7 img {
-  left: 705px;
-  top: 255px;
-  max-width: 215px;
-  height: 215px;
+  left: 44.0625rem;
+  top: 15.9375rem;
+  max-width: 13.4375rem;
+  height: 13.4375rem;
 }
 
 .std_image .stdimg8 img {
-  left: 920px;
-  top: 180px;
-  max-width: 215px;
-  height: 215px;
+  left: 57.5rem;
+  top: 11.25rem;
+  max-width: 13.4375rem;
+  height: 13.4375rem;
 }
 
 .std_image .stdimg9 img {
-  left: 790px;
-  top: 70px;
-  max-width: 162px;
-  height: 162px;
+  left: 49.375rem;
+  top: 4.375rem;
+  max-width: 10.125rem;
+  height: 10.125rem;
 }
 
 .std_image .stars .star1 img {
-  top: 340px;
-  left: 525px;
-  height: 63px;
-  max-width: 63px;
+  top: 21.25rem;
+  left: 32.8125rem;
+  height: 3.9375rem;
+  max-width: 3.9375rem;
   animation: var(--star-animation);
 }
 
 .std_image .stars .star2 img {
-  top: 315px;
-  left: 505px;
-  height: 38px;
-  max-width: 38px;
+  top: 19.6875rem;
+  left: 31.5625rem;
+  height: 2.375rem;
+  max-width: 2.375rem;
   animation: var(--star-animation);
 }
 
 .std_image .stars .star3 img {
-  top: 330px;
-  left: 570px;
-  height: 28px;
-  max-width: 28px;
+  top: 20.625rem;
+  left: 35.625rem;
+  height: 1.75rem;
+  max-width: 1.75rem;
   animation: var(--star-animation);
 }
 @keyframes sparkle {
@@ -227,7 +227,7 @@ nav {
 }
 
 .certification {
-  margin-top: 90px;
+  margin-top: 5.625rem;
 }
 
 .card_text {
@@ -239,7 +239,7 @@ nav {
   background: var(--white);
   font-size: var(--header-font-size);
   font-weight: var(--font-weight-medium);
-  margin: 20px;
+  margin: 1.15rem;
   background-image: var(--gradient-to-right);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -249,7 +249,7 @@ nav {
 
 .card_text p {
   font-size: var(--paragraph-text-large);
-  margin: 30px;
+  margin: 1.875rem;
   color: var(--text-dark);
   font-weight: var(--font-weight-medium);
   opacity: 50%;
@@ -263,25 +263,25 @@ nav {
 
 .programme_wrapper {
   position: relative;
-  max-width: 380px;
+  max-width: 23.75rem;
 }
 
 .programme_wrapper .programme_img {
-  max-width: 380px;
-  height: 436px;
+  max-width: 23.75rem;
+  height: 27.25rem;
 }
 
 .programme_wrapper .arrow_img {
   position: absolute;
-  right: 36.68px;
-  bottom: 55.8px;
+  right: 2.2925rem;
+  bottom: 3.4875rem;
 }
 
 .programme_wrapper p {
   position: absolute;
-  bottom: 50px;
-  left: 25px;
-  max-width: 277px;
+  bottom: 3.125rem;
+  left: 1.5625rem;
+  max-width: 17.3125rem;
   color: var(--white);
   font-size: 2rem;
 }
@@ -289,19 +289,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 .lone-star img{
-  width: 62px;
-  height: 63px;
+  width: 3.875rem;
+  height: 3.9375rem;
   animation: var(--star-animation);
 }
 .registration{
-  margin-top: 34px;
+  margin-top: 2.125rem;
 }
 .registration h2{
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
   font-weight:var(--font-weight-medium);
   font-size: var(--header-font-size);
   color: var(--primary-light);
@@ -319,20 +319,164 @@ nav {
 }
 .division-line{
   background-image: var(--gradient-to-bottom);
-  width: 0.5px;
-  height: 150px;
+  width: 1px;
+  height: 160px;
+  position: absolute;
+  z-index: 1;
 }
 img .division-line-star{
   position: absolute;
-  width: 32px;
-  height: 33px;
+  width: 2rem;
+  height: 2.0625rem;
 }
 .registration .registration-form div{
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 0.875rem;
 }
 .registration .registration-form div .input-field{
-  max-width: 350px;
-  height: 65px;
+  width: 21.875rem;
+  height: 4.0625rem;
+  border-radius: 1.25rem;
+  padding-left: 2rem;
+  border: 0.08rem solid #c5c5c5;
+}
+.name-field{
+  position: relative;
+}
+.name-field .name{
+  position: absolute;
+  top: 1.25rem;
+  left: 2.125rem;
+  color: #8A8E97;
+}
+.name-field #name::placeholder{
+  font-size: 0.7rem;
+  top: 2.1875rem;
+  position: absolute;
+}
+
+.registration .registration-form div .input-field ::placeholder{
+  color: #8A8E97;
+}
+
+.Enroll{
+  font-family: "Inter";
+  position: absolute;
+  font-weight: 500;
+  color: white;
+  font-size: x-large;
+  margin-top: 275px;
+  border-style: none;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  border-radius: 15px;
+  margin-left: -200px;
+  background-image: var(--gradient-to-right);
+}
+.Enroll #arrow{
+  position: inherit;
+  top: 20px;
+  right: 25px;
+  font-size: x-large;
+  font-weight: 100;
+}
+
+.Know{
+  position: absolute;
+  margin-top: 250px;
+}
+
+.Bhutan{
+  font-weight:var(--font-weight-medium);
+  font-size: var(--header-font-size);
+  color: var(--primary-light);
+  background: var(--white);
+  background-image: var(--gradient-to-right);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.text_know{
+  margin-top: 15px;
+  text-align: center;
+  color: #8A8E97;
+  font-size: 20px;
+  margin-left: 100px;
+  letter-spacing: 20%;
+}
+.know_bhutan_img{
+  margin-top: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.know_bhutan_img .landscape{
+  width: 365px;
+  height: 233px;
+  margin: 10px;
+}
+
+.star01{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 545px;
+  animation: var(--star-animation);
+  top: 2875px;
+}
+
+.star02{
+  animation: var(--star-animation);
+  position: absolute;
+  right: 555px;
+  width: 30px;
+  height: 30px;
+}
+
+.foot{
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.division-line01{
+  background-image: var(--gradient-to-bottom);
+  width: 1114px;
+  height: 1px;
+  position: absolute;
+  z-index: 1;
+}
+.division-line-star01{
+  margin: -31px 0 0 540px;
+}
+.text{
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+.sideShit{
+  margin-left: 275px;
+  text-align: right;
+  font-size: var(--paragraph-text-large);
+  width: 306px;
+  color: var(--text-dark);
+}
+.footHead{
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--primary-light);
+  background: var(--white);
+  background-image: var(--gradient-to-right);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.sideShit a{
+  color: #161E31;
 }

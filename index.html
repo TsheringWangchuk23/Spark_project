@@ -103,14 +103,17 @@
       <h2>Register here</h2>
       <form action="#" class="registration-form">
         <div>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Full name"
-            class="input-field"
-            required
-          />
+          <div class="name-field">
+            <label for="name" class="name" onfocus="(this.style.display=none)">Full name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder= "Must be same with your identification"
+              class="input-field"
+              required
+            />
+          </div>
           <input
             type="email"
             id="email"
@@ -157,8 +160,48 @@
             class="input-field"
             required
           />
+
+          <div class="Enroll">
+            <p>Enroll Now </p>
+            <p id="arrow">--></p>
+          </div>
         </div>
       </form>
+
+      <div class="Know">
+        <h1 class="Bhutan">Know Bhutan</h1>
+        <p class="text_know">Escape to a land untouched by time: Bhutan. This unique kingdom of Bhutan offers a chance to experience a living<br> 
+          tapestry of culture and religion. Hike through ancient monasteries clinging to cliffsides, where monks in saffron robes<br> 
+          chant and share their wisdom. Immerse yourself in the philosophy of Gross National Happiness.Bhutan promises an <br>
+          unforgettable encounter with a culture unlike any other.</p>
+      </div>
+
+      <div class="know_bhutan_img">
+
+        <img src="Images/Rectangle 12.jpg" alt="" class="landscape">
+        <img src="Images/Rectangle 13.jpg" alt="" class="landscape">
+        <img src="Images/Rectangle 14.jpg" alt="" class="landscape">
+
+        <img src="Images/star.svg" alt="" aria-hidden="true" class="star01"/>
+
+        <img src="Images/star.svg" alt="" aria-hidden="true" class="star02"/>
+
+      </div>
     </section>
+    <footer>
+      <div class="foot">
+        <div class="division-line01"></div>
+      <div>
+        <img src="Images/star.svg" alt="" class="division-line-star01" />
+      </div>
+      <div class="text">
+        <p class="footHead">Let's SPARK together!</p>
+        <aside class="sideShit">
+          <p>All rights reserved 2024</p>
+          <p>Email: <a href="spark.gcit@rub.edu.bt" style="text-decoration: none;">spark.gcit@rub.edu.bt</a></p>
+        </aside>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
