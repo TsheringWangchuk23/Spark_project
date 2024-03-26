@@ -316,6 +316,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .division-line{
   background-image: var(--gradient-to-bottom);
@@ -361,26 +362,17 @@ img .division-line-star{
 }
 
 .Enroll{
-  font-family: "Inter";
   position: absolute;
   font-weight: 500;
   color: white;
   font-size: x-large;
-  margin-top: 275px;
+  top: 16.5rem;
+  left: 24rem;
   border-style: none;
-  padding: 20px;
   width: 350px;
-  text-align: center;
+  height: 65px;
   border-radius: 15px;
-  margin-left: -200px;
   background-image: var(--gradient-to-right);
-}
-.Enroll #arrow{
-  position: inherit;
-  top: 20px;
-  right: 25px;
-  font-size: x-large;
-  font-weight: 100;
 }
 
 .Know{
