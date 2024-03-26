@@ -128,7 +128,6 @@ nav {
   margin-top: 3.8125rem;
   min-height: 31.4375rem;
 }
-
 .std_image div img {
   position: absolute;
 }
@@ -314,7 +313,7 @@ nav {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.registration .registration-form{
+.registration .registration-form .form-flex-div{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,7 +331,7 @@ img .division-line-star{
   width: 2rem;
   height: 2.0625rem;
 }
-.registration .registration-form div{
+.registration .registration-form .form-flex-div div{
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
@@ -363,26 +362,28 @@ img .division-line-star{
   color: #8A8E97;
 }
 
-.Enroll{
-  position: absolute;
-  font-weight: 500;
+.Enroll-btn{
+  font-weight: var(--font-weight-semi-bold);
   color: white;
   font-size: x-large;
-  top: 16.5rem;
-  left: 24rem;
+  transform: translate(24.2rem, 3.1875rem);
   border-style: none;
   width: 350px;
   height: 65px;
   border-radius: 15px;
   background-image: var(--gradient-to-right);
 }
-
-.Know{
-  position: absolute;
-  margin-top: 250px;
+.Enroll-btn img{
+  position: relative;
+  left: 68px;
 }
 
-.Bhutan{
+.know-bhutan{
+  /* position: absolute; */
+  margin-top: 160px;
+}
+
+.know-bhutan h3{
   font-weight:var(--font-weight-medium);
   font-size: var(--header-font-size);
   color: var(--primary-light);
@@ -394,27 +395,26 @@ img .division-line-star{
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   text-align: center;
-  margin-left: 100px;
 }
 
-.text_know{
+.know-bhutan p{
   margin-top: 15px;
+  margin-bottom: 40px;
+  max-width: 1114px;
   text-align: center;
   color: #8A8E97;
   font-size: 20px;
-  margin-left: 100px;
-  letter-spacing: 20%;
+  /* letter-spacing: 20%; */
 }
 .know_bhutan_img{
-  margin-top: 450px;
   display: flex;
+  gap: 10px;
   justify-content: center;
 }
 
 .know_bhutan_img .landscape{
   width: 365px;
   height: 233px;
-  margin: 10px;
 }
 
 .star01{
