@@ -132,6 +132,7 @@ nav{
   background: linear-gradient(to right, #FF571E, #FF086B);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .enroll_btn{
@@ -200,6 +201,7 @@ nav{
   background: linear-gradient(to right, #FF571E, #FF086B);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   font-weight: 500;
   padding-bottom: 2rem;
 }
@@ -394,6 +396,7 @@ nav{
   background-image: var(--gradient-to-right);
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -481,6 +484,7 @@ img .division-line-star{
   background-image: var(--gradient-to-right);
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   text-align: center;
@@ -562,6 +566,7 @@ img .division-line-star{
   background-image: var(--gradient-to-right);
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
