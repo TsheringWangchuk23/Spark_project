@@ -44,11 +44,11 @@
   --text-light: #A4A4A4;
   --white: #fff;
   --star-animation: sparkle 1.5s infinite;
-  --header-font-size: 3rem;
-  --btn-text-small: 0.9375rem;
-  --btn-text-large: 1.5rem;
-  --paragraph-text-large: 1.25rem;
-  --paragraph-text-small: 0.9375rem;
+  --header-font-size: 3rem; /*48px*/
+  --btn-text-small: 0.9375rem; /*15px*/
+  --btn-text-large: 1.5rem; /*24px*/
+  --paragraph-text-large: 1.25rem; /*20px*/
+  --paragraph-text-small: 0.9375rem; /*15px*/
   --font-family: "Inter Tight", sans-serif;
   --font-weight-thin: 100;
   --font-weight-extra-light: 200;
@@ -400,42 +400,46 @@ img .division-line-star{
 .know-bhutan p{
   margin-top: 15px;
   margin-bottom: 40px;
-  max-width: 1114px;
   text-align: center;
-  color: #8A8E97;
-  font-size: 20px;
+  width: fit-content;
+  color: var(--text-dark);
+  opacity: 50%;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--paragraph-text-large);
   /* letter-spacing: 20%; */
 }
 .know_bhutan_img{
   display: flex;
   gap: 10px;
   justify-content: center;
+  position: relative;
 }
 
 .know_bhutan_img .landscape{
-  width: 365px;
+  max-width: 365px;
   height: 233px;
 }
 
 .star01{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 545px;
   animation: var(--star-animation);
-  top: 2875px;
+  position: absolute;
+  top: -25px;
+  right: 358px;
+  width: 45px;
+  height: 45px;
 }
 
 .star02{
-  animation: var(--star-animation);
   position: absolute;
-  right: 555px;
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
+  left: 346px;
+  animation: var(--star-animation);
+  top: 210px;
 }
 
 .foot{
-  margin-top: 120px;
+  margin-top: 170px;
   margin-bottom: 50px;
 }
 .division-line01{
@@ -443,7 +447,7 @@ img .division-line-star{
   width: 1114px;
   height: 1px;
   position: absolute;
-  z-index: 1;
+  z-index: -5;
 }
 .division-line-star01{
   margin: -31px 0 0 540px;
@@ -451,9 +455,11 @@ img .division-line-star{
 .text{
   display: flex;
   flex-direction: row;
-  padding-top: 40px;
+  padding-top: 26px;
 }
 .sideShit{
+  color: var(--text-dark);
+  opacity: 50%;
   margin-left: 275px;
   text-align: right;
   font-size: var(--paragraph-text-large);
@@ -462,7 +468,7 @@ img .division-line-star{
 }
 .footHead{
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: var(--font-weight-bold);
   letter-spacing: 2px;
   color: var(--primary-light);
   background: var(--white);
@@ -475,4 +481,4 @@ img .division-line-star{
 }
 .sideShit a{
   color: #161E31;
-}
+} 
