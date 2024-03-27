@@ -1,0 +1,570 @@
+@layer reset {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: unset;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+  img,
+  picture,
+  svg,
+  canvas {
+    /* display: block; */
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+:root {
+  --primary-dark: #ff086b;
+  --primary-light: #ff571e;
+  --gradient-to-right: linear-gradient(to right, #ff571e, #ff086b);
+  --gradient-to-bottom: linear-gradient(to bottom, #ff571e, #ff086b);
+  --gradient-to-left: linear-gradient(to left, #ff571e, #ff086b);
+  --text-dark: #161E31;
+  --text-light: #A4A4A4;
+  --white: #fff;
+  --star-animation: sparkle 1.5s infinite;
+  --header-font-size: 3rem;
+  --btn-text-small: 0.9375rem;
+  --btn-text-large: 1.5rem;
+  --paragraph-text-large: 1.25rem;
+  --paragraph-text-small: 0.9375rem;
+  --font-family: "Inter Tight", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 700;
+}
+
+body{
+    margin: 33px 192px 0px 184px;
+    font-family: inter,sans-serif;
+}
+
+
+/* Start of Navagation */
+nav{
+    display: flex;
+}
+
+
+/* providing spacing for the GCIT logo */
+.gcitlogo{
+    flex: 1.5;
+}
+
+/* Providing spacings for the link*/
+.links{
+    flex: 2;
+}
+
+/* Arranging links in a Horizontal manner */
+.links .link_list{
+    display: flex;
+    list-style: none;
+    margin-top: 13px;
+    gap: 44px;
+}
+
+/* Styling the links within the list */
+.links .link_list li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Providing an Active class for the current opened link */
+.links .link_list li .active{
+    color: #FF086B;
+}
+/* Navagation Ends here */
+
+
+/* Main content of the page starts */
+
+.curriculum_enroll{
+  display: flex;
+  background-color: #161E31;
+  width: 95.9rem;
+  position: relative;
+  right: 200px;
+  margin-top: 2rem;
+}
+
+.sparklogo img{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: 13rem;
+}
+
+.component{
+  margin-top: 2.75rem;
+  margin-left: 1rem;
+}
+
+.component p{
+  font-size: 24px;
+  background: linear-gradient(to right, #FF571E, #FF086B);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.enroll_btn{
+  position: relative;
+  left: 20rem;
+  top: 4rem;
+}
+
+.enroll_btn button{
+  width: 211px;
+  height: 43px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #FF571E, #FF086B);
+  color: white;
+  border: none;
+}
+
+.enroll_btn button div{
+  display: flex;
+  margin-left: 58px;
+}
+
+.enroll_btn button div p{
+  padding-right: 26px;
+}
+
+
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.curriculum_enroll .stars .star1 img {
+  position: relative;
+  top: 65px;
+  left: 140px;
+  height: 63px;
+  max-width: 63px;
+  animation: var(--star-animation);
+}
+
+.curriculum_enroll .stars .star2 img {
+  position: relative;
+  bottom: 27px;
+  left: 186px;
+  height: 38px;
+  max-width: 38px;
+  animation: var(--star-animation);
+}
+
+.wording1{
+  text-align: center;
+  margin: 5rem;
+}
+
+.wording1 h1{
+  font-size: 48px;
+  background: linear-gradient(to right, #FF571E, #FF086B);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.wording1 p{
+  font-size: 20px;
+  color: #161E31;
+  opacity: 50%;
+}
+
+
+.row1{
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+  margin: 0;
+}
+
+.card1{
+  margin-right: 10px;
+}
+.card2{
+  margin-left: 10px;
+}
+.card1,.card2{
+  width: 515px;
+  height: 761px;
+  padding: 20px;
+  border: solid 2px #FF086B;
+  border-radius: 36px;
+}
+
+.card3{
+  display: flex;
+  padding: 20px;
+  border: solid 2px #FF086B;
+  border-radius: 36px;
+  height: 480px;
+  width: 1050px;
+  margin-left: 45px;
+  margin-top: 30px;
+  margin-bottom: 2.5rem;
+}
+
+
+.card1 p,.card2 p,.card3 p{
+  color: #161E31;
+  opacity: 50%;
+}
+
+.card1 .p1,.card2 .p1,.card3 .p1{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.card1 h1,.card2 h1,.card3 h1{
+  font-size: 36px;
+  font-weight: 500;
+  padding: 10px 100px 10px 0;
+}
+
+.card1 img,.card2 img{
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.card3 img{
+  height: 170px;
+  width: 470px;
+}
+
+.card1 .p2,.card2 .p2{
+  margin-bottom: 60px;
+  font-size: 15px;
+}
+
+.card3 .p2{
+  margin-bottom: 60px;
+  font-size: 15px;
+  width: 470px;
+  margin-top: 25px;
+}
+
+.coursehead{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+ .card1 .coursehead h2, .card2 .coursehead h2{
+  font-size: 20px;
+  padding-right: 290px;
+}
+
+.card3 .coursehead h2{
+  font-size: 20px;
+  padding-right: 290px;
+  margin-top: 126px;
+}
+
+.card3 .coursehead p{
+  margin-top: 120px;
+}
+
+.coursehead p{
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.coursehead h5{
+  font-size: 15px;
+  color: #161E31;
+}
+
+.card1 .p3,.card1 .p4,.card2 .p3,.card2 .p4,.card3 .p3,.card3 .p4{
+  margin-left: 55px;
+  font-size: 12px;
+}
+
+.card1 .p3,.card2 .p3,.card3 .p3{
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.card1btn,.card2btn{
+  position: relative;
+  left: 260px;
+  top: 40px;
+}
+
+.card1btn button,.card2btn button{
+  margin: 5px;
+}
+
+.card1btn .btn1,.card2btn .btn1,.card3btn .btn1{
+  height: 21px;
+  width: 65px;
+  color: white;
+  background: linear-gradient(to right, #FF571E, #FF086B);
+  border: none;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.card1btn .btn2,.card1btn .btn3,.card1btn .btn4,.card1btn .btn5,.card2btn .btn2,.card2btn .btn3,.card2btn .btn4,.card2btn .btn5{
+  width: 21px;
+  height: 21px;
+  font-size: 10px;
+  border-radius: 6px;
+  border: none;
+  color: #F8B179;
+  background-color: #161E31;
+}
+
+.card3btn{
+  margin-left: 263px;
+  margin-top: 20px;
+}
+
+
+
+
+.card3btn .btn2, .card3btn .btn3,.card3btn .btn4, .card3btn .btn5{
+  margin-left: 10px;
+  width: 21px;
+  height: 21px;
+  font-size: 10px;
+  border-radius: 6px;
+  border: none;
+  color: #F8B179;
+  background-color: #161E31;
+}
+
+.lone_star{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.registration{
+  margin-top: 2.125rem;
+}
+.registration h2{
+  text-align: center;
+  margin-bottom: 2.125rem;
+  font-weight:var(--font-weight-medium);
+  font-size: var(--header-font-size);
+  color: var(--primary-light);
+  background: var(--white);
+  background-image: var(--gradient-to-right);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.registration .registration-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.division-line{
+  background-image: var(--gradient-to-bottom);
+  width: 1px;
+  height: 160px;
+  position: absolute;
+  z-index: 1;
+}
+img .division-line-star{
+  position: absolute;
+  width: 33px;
+  height: 33px;
+}
+.registration .registration-form div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.registration .registration-form div .input-field{
+  width: 21.875rem;
+  height: 4.0625rem;
+  border-radius: 1.25rem;
+  padding-left: 2rem;
+  border: 0.08rem solid #c5c5c5;
+}
+.name-field{
+  position: relative;
+}
+.name-field .name{
+  position: absolute;
+  top: 1.25rem;
+  left: 2.125rem;
+  color: #8A8E97;
+}
+.name-field #name::placeholder{
+  font-size: 0.7rem;
+  top: 2.1875rem;
+  position: absolute;
+}
+
+.registration .registration-form div .input-field ::placeholder{
+  color: #8A8E97;
+}
+
+.Enroll{
+  font-family: "Inter";
+  position: absolute;
+  font-weight: 500;
+  color: white;
+  font-size: x-large;
+  margin-top: 275px;
+  border-style: none;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  border-radius: 15px;
+  margin-left: -200px;
+  background-image: var(--gradient-to-right);
+}
+.Enroll #arrow{
+  position: inherit;
+  top: 20px;
+  right: 25px;
+  font-size: x-large;
+  font-weight: 100;
+}
+
+.community{
+  position: absolute;
+  margin-top: 250px;
+}
+
+.service{
+  font-weight:var(--font-weight-medium);
+  font-size: var(--header-font-size);
+  color: var(--primary-light);
+  background: var(--white);
+  background-image: var(--gradient-to-right);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.text_know{
+  margin-top: 15px;
+  text-align: center;
+  color: #8A8E97;
+  font-size: 20px;
+  margin-left: 100px;
+  letter-spacing: 20%;
+}
+.communityserviceimg{
+  margin-top: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.communityserviceimg .landscape{
+  width: 365px;
+  height: 233px;
+  margin: 10px;
+}
+
+.star01{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 540px;
+  animation: var(--star-animation);
+  top: 2960px;
+}
+
+.star02{
+  animation: var(--star-animation);
+  position: absolute;
+  right: 555px;
+  width: 30px;
+  height: 30px;
+}
+
+.foot{
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.division-line01{
+  background-image: var(--gradient-to-bottom);
+  width: 1114px;
+  height: 1px;
+  position: absolute;
+  z-index: 1;
+}
+.division-line-star01{
+  margin: -15px 0 0 540px;
+  width: 33px;
+  height: 33px;
+}
+.text{
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+.sideInfo{
+  margin-left: 175px;
+  text-align: right;
+  font-size: var(--paragraph-text-large);
+  width: 306px;
+  color: var(--text-dark);
+  opacity: 50%;
+}
+.footHead{
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--primary-light);
+  background: var(--white);
+  background-image: var(--gradient-to-right);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.sideInfo a{
+  color: #161E31;
+}
