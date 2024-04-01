@@ -43,7 +43,7 @@
   --text-dark: #161E31;
   --text-light: #A4A4A4;
   --white: #fff;
-  --star-animation: sparkle 1.5s infinite;
+  --star-animation: sparkle 1.8s infinite;
   --header-font-size: 3rem; /*48px*/
   --btn-text-small: 0.9375rem; /*15px*/
   --btn-text-large: 1.5rem; /*24px*/
@@ -58,6 +58,17 @@
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 700;
+}
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 body {
@@ -196,6 +207,7 @@ nav {
   height: 3.9375rem;
   max-width: 3.9375rem;
   animation: var(--star-animation);
+  animation-delay: 0.75s;
 }
 
 .std_image .stars .star2 img {
@@ -212,17 +224,7 @@ nav {
   height: 1.75rem;
   max-width: 1.75rem;
   animation: var(--star-animation);
-}
-@keyframes sparkle {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
+  animation-delay: 1s;
 }
 
 .certification {
@@ -376,6 +378,10 @@ img .division-line-star{
 .Enroll-btn img{
   position: relative;
   left: 68px;
+}
+.Enroll-btn:hover, .Enroll-btn:focus-visible, .Enroll-btn:active{
+  background-image: linear-gradient(to right,#ff086b, #ff086b);
+  cursor: pointer;
 }
 
 .know-bhutan{
