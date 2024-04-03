@@ -268,7 +268,7 @@ nav {
   max-width: 23.75rem;
 }
 
-.programme_wrapper .programme_img {
+.programme_wrapper a .programme_img {
   max-width: 23.75rem;
   height: 27.25rem;
 }
@@ -279,13 +279,25 @@ nav {
   bottom: 3.4875rem;
 }
 
-.programme_wrapper p {
+.programme_wrapper .programme-title {
   position: absolute;
+  text-decoration: none;
   bottom: 3.125rem;
-  left: 1.5625rem;
+  left: 2rem;
   max-width: 17.3125rem;
   color: var(--white);
   font-size: 2rem;
+}
+.programme_wrapper:nth-child(2) .programme-title{
+  width: 15rem;
+}
+.programme_wrapper:nth-child(3) .programme-title{
+  width: 10rem;
+}
+.programme_wrapper:hover{
+  .programme-title{
+   text-decoration: underline;
+  }
 }
 .lone-star{
   display: flex;
